@@ -23,8 +23,6 @@ To write a program to implement Stochastic Gradient Descent (SGD) Regressor for 
    For each sample, compute the prediction error and update the weights and bias using:
 
    * Gradient of loss function (usually Mean Squared Error)
-   * Update rule:
-     ( w = w - \eta \cdot \nabla L )
 
 5. **Evaluate the Model**
    After training, predict outputs on test data and evaluate performance using metrics like:
