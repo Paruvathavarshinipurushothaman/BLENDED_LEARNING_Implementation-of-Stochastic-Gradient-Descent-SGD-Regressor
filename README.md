@@ -10,11 +10,27 @@ To write a program to implement Stochastic Gradient Descent (SGD) Regressor for 
 
 ## Algorithm:
 
-1. Initialize weights and bias with small random values and set learning rate and number of epochs.
-2. For each epoch, shuffle the training data and iterate through each training example.
-3. For each example, predict the output, compute the error, and update weights and bias using the gradient of the loss function.
-4. After training, evaluate the model performance using metrics like Mean Squared Error (MSE) or R² score.
+1. **Initialize Parameters**
+   Initialize the model parameters (weights and bias) with small random values and choose a learning rate (η).
 
+2. **Input Training Data**
+   Provide the dataset with input features (X) and target values (y), and optionally split into training and testing sets.
+
+3. **Iterate Over Data (Epochs)**
+   For a fixed number of epochs, loop through each training sample one by one.
+
+4. **Update Weights Using SGD Rule**
+   For each sample, compute the prediction error and update the weights and bias using:
+
+   * Gradient of loss function (usually Mean Squared Error)
+   * Update rule:
+     ( w = w - \eta \cdot \nabla L )
+
+5. **Evaluate the Model**
+   After training, predict outputs on test data and evaluate performance using metrics like:
+
+   * Mean Squared Error (MSE)
+   * R² Score
 
 ## Program:
 
